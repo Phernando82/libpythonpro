@@ -7,6 +7,8 @@ Nesse curso é ensinado como contribuir com projetos de código aberto
 
 Suportada versão de Python 3
 
+Utilizamos o Travis CI
+
 Para instalar:
 ```console
 python3 -m venv venv
