@@ -3,6 +3,8 @@ Módulo para exemplificar construção de projetos Python no curso Pytools
 
 Nesse curso é ensinado como contribuir com projetos de código aberto
 
+[![Build Status](https://app.travis-ci.com/Phernando82/libpythonpro.svg?branch=main)](https://app.travis-ci.com/Phernando82/libpythonpro)
+
 Suportada versão de Python 3
 
 Para instalar:
