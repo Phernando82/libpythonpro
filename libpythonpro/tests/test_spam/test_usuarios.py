@@ -4,7 +4,7 @@ from libpythonpro.spam.db import Conexao
 from libpythonpro.spam.modelos import Usuario
 
 
-@pytest.fixture
+@pytest.fixture(scope='session') # escopos: function, module e session, o teste roda em cada um desses níveis
 def conexao():
     #Setup
     conexao_obj = Conexao()
