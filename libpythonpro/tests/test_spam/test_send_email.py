@@ -1,10 +1,10 @@
 import pytest
 
-from libpythonpro.spam.sender_email import Sender, EmailInvalido
+from libpythonpro.spam.enviador_email import Enviador, EmailInvalido
 
 
 def test_create_send_email():
-    sender = Sender()
+    sender = Enviador()
     assert sender is not None
 
 @pytest.mark.parametrize(
@@ -13,7 +13,7 @@ def test_create_send_email():
 )
 
 def test_remetente( destinatario):
-    sender = Sender()
+    sender = Enviador()
     destinatarios = ['nandovalverde@gmail.com', 'fernandoperesvalverde@hotmail.com']
     destinatario
     resultado = sender.send(
@@ -30,7 +30,7 @@ def test_remetente( destinatario):
     ['','nandovalverde']
 )
 def test_remetente_invalido(remetente):
-    sender = Sender()
+    sender = Enviador()
     with pytest.raises(EmailInvalido):
         sender.send(
         remetente,
